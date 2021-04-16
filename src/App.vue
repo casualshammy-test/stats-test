@@ -1,15 +1,17 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="hello">
+    {{ info }}
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import x from "../dep-artifacts/publish_nuget.txt";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {info:x};
   }
 }
-</script>
 
+</script>
